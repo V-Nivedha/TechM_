@@ -1,0 +1,20 @@
+<div class="cmp-news" data-cmp-is="news" data-sly-use.model="com.myTraining.core.models.NewsModel">
+    <h2 class="cmp-news__title">News Component</h2>
+
+    <div class="cmp-news__item" data-sly-test="${properties.text}">
+        <p class="cmp-news__label">Text:</p>
+        <pre class="cmp-news__output">${properties.text}</pre>
+    </div>
+
+    <div class="cmp-news__item" data-sly-test="${properties.newsDetail}">
+        <p class="cmp-news__label">News Detail:</p>
+        <pre class="cmp-news__output">${properties.newsDetail}</pre>
+    </div>
+
+    <div class="cmp-news__item" data-sly-use.model="com.myTraining.core.models.NewsModel">
+        <p class="cmp-news__label">Published Date:</p>
+        <pre class="cmp-news__output">${model.formattedPublishedDate}</pre>
+    </div>
+    
+    
+</div>
